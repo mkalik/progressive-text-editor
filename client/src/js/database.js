@@ -35,7 +35,9 @@ export const getDb = async () => {
     if (result.length == 0) {
         return;
     }
-    return result[0].content;
+    const spot = result.length - 1;
+
+    return result[spot].content;
 };
 
 initdb();
