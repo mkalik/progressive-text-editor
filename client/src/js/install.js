@@ -6,13 +6,21 @@ let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     butInstall.style.visibility = 'visible';
+    deferredPrompt = event;
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async (event) => {
-    event.preventDefault();
-    butInstall.setAttribute('disabled', true);
-    console.log('installing');
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+        butInstall.setAttribute('disabled', true);
+        console.log('installing');
+    });
 });
 
 // TODO: Add an handler for the `appinstalled` event
