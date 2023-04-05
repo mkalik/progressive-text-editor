@@ -1,6 +1,6 @@
 # JATE text editor
 
-![application screen shot](./app-screeshot/jateScreenShot.png)\
+![application screen shot](./app-screenshot/jateScreenShot.png)\
 [Try it out!](https://mkalik-jate-editor.herokuapp.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
