@@ -32,7 +32,7 @@ this app is prebuilt so there are no requirements ( however if you are on firefo
 simply click anywhere and begin typing! the app will save all of the text input as soon as th browser loses focus
 # <a name='3'></a>
 ## 3.Credits:
-mkalik\
+mkalik
 
 this application was built from starter code which can be found [here](https://github.com/coding-boot-camp/cautious-meme)
 # <a name='4'></a>
